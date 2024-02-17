@@ -8,6 +8,12 @@ img {
 
 /* above is temp */
 
+/* ---------------------all------------------ */
+
+body > * {
+    outline: 2px dotted red;
+    padding: 0 200px;
+}
 
 body {
     box-sizing: border-box;
@@ -18,18 +24,22 @@ body {
     flex-direction: column;
 }
 
-body > * {
-    outline: 2px dotted red;
-    padding: 0 50px;
-}
+/* ---------------------header------------------ */
 
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    /* font-size: xx-large; */
     background-color: lightblue;
 
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .header ul {
@@ -44,33 +54,83 @@ body > * {
 }
 
 .header a {
+    /* looks underlined with outline: auto on */
     text-decoration: none;
-    /* color: */
+    font-size: 18px;
 }
+
+/* ---------------------hero------------------ */
 
 .hero {
     display: flex;
+    gap: 50px;
+    justify-content: center;
+    
 
     background-color: lightblue;
+    /* max-height: 200px; */
+    /* min-height: 100px; */
 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero > * {
+    /* min-height: 150px; */
 }
 
 .hero .left {
     display: flex;
     flex-direction: column;
+    flex: 1;
+
+    font-size: 18px;
+    /* color: #e5e7eb; */
 }
+
+.hero h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 48px;
+    font-weight: bolder;
+    /* color: #f9faf8 */
+}
+
+.hero img {
+    flex: 1;
+    /* max-height: 200px; */
+}
+
+.hero button {
+    padding: 8px 24px;
+}
+/* ---------------------info------------------ */
 
 .info {
 
+}
+
+.info h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    /* color: #1f2937; */
 }
 
 .cards {
     display: flex;
 }
 
+/* ---------------------quote------------------ */
+
 .quote {
     background-color: lightblue;
+
+    font-size: 36px;
+    font-style: italic;
+    /* color: #1f2937 */
 }
+
+/* ---------------------cta------------------ */
 
 .cta {
 
@@ -83,9 +143,12 @@ body > * {
     margin: 50px;
 }
 
+/* ---------------------footer------------------ */
+
 .footer {
     background-color: lightblue;
     text-align: center;
+    padding: 16px;
 
 }
 
