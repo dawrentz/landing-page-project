@@ -1,17 +1,6 @@
-* {
-    /* outline: auto; */
-}
-
-img {
-    /* max-height: 250px; */
-}
-
-/* above is temp */
-
 /* ---------------------all------------------ */
 
 body > * {
-    /* outline: 2px dotted red; */
     padding: 0 250px;
     }
 
@@ -60,15 +49,10 @@ body {
 
 .hero {
     display: flex;
-    gap: 50px;
-    /* justify-content: center; */
-    
+    gap: 50px;    
 
     background-color: #1f2937;
     color: #f5e7eb;
-
-    /* max-height: 200px; */
-    /* min-height: 100px; */
 
     padding-top: 100px;
     padding-bottom: 100px;
@@ -82,10 +66,7 @@ body {
 
     flex: 0 1 50%;
 
-
     font-size: 18px;
-    /* color: #e5e7eb; */
-    /* outline: auto; */
 }
 
 .hero h1 {
@@ -93,7 +74,6 @@ body {
     margin: 0 0 8px 0;
     font-size: 48px;
     font-weight: bolder;
-    /* color: #f9faf8 */
 }
 
 .hero img {
@@ -112,12 +92,12 @@ body {
 .info h2 {
     font-size: 36px;
     font-weight: bolder;
-    /* color: #1f2937; */
     padding: 16px 0;
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -135,10 +115,6 @@ body {
     padding: 0;
 }
 
-.card {
-    /* outline: auto; */
-}
-
 /* ---------------------quote------------------ */
 
 .quote {
@@ -149,13 +125,12 @@ body {
     color: #1f2937;
     padding-top: 100px;
     padding-bottom: 100px;
-    /* padding: 100px 400px; */
+    padding: 100px 25%;
     text-align: center;
 }
 
 .quote div {
-/* outline: auto; */
-/* text-align: right; */
+text-align: right;
 padding: 16px 0 0 300px;
 font-style: normal;
 font-weight: bolder;
@@ -176,9 +151,11 @@ color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 
 
     padding: 50px 100px;
+    min-width: fit-content;
 
     background-color: #3382f6;
     margin: 50px;
@@ -222,7 +199,6 @@ button {
 }
 
  a {
-    /* looks underlined with outline: auto on */
     text-decoration: none;
     font-size: 18px;
     color: #e5e7eb
