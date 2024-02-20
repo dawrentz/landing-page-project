@@ -50,6 +50,8 @@ body {
 .hero {
     display: flex;
     gap: 50px;    
+    flex-wrap: wrap;
+    /* justify-content: center; */
 
     background-color: #1f2937;
     color: #f5e7eb;
@@ -64,7 +66,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    flex: 0 1 50%;
+    flex: 1 1 0;
 
     font-size: 18px;
 }
@@ -152,6 +154,7 @@ color: black;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 
 
     padding: 50px 100px;
